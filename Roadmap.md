@@ -4,8 +4,6 @@
 
 <div align="center">
 
-![Progress](https://progress-bar.dev/100/?title=Core%20Features&width=400&color=00ff00)
-
 **17/20 Core Features Completed** ✅
 
 </div>
