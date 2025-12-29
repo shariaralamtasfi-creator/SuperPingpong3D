@@ -108,22 +108,6 @@ Real-time HUD display showing the current volley hit count—watch records break
 ### Camera
 - **C** - Cycle through camera views
 
----
-
-## 🚀 Getting Started
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/super-pingpong-3d.git
-
-# Navigate to project directory
-cd super-pingpong-3d
-
-# Open index.html in your browser
-# Or use a local server for best performance
-```
 
 ### Quick Start
 
@@ -159,12 +143,6 @@ Then open `http://localhost:8000` in your browser
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
----
-
 ## 🙏 Acknowledgments
 
 - Inspired by classic table tennis games
@@ -173,12 +151,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-<div align="center">
 
-### 🌟 Star this repo if you enjoy the game!
-
-**Made with ❤️ and Three.js**
-
-[Play Now](#) • [Report Bug](https://github.com/yourusername/super-pingpong-3d/issues) • [Request Feature](https://github.com/yourusername/super-pingpong-3d/issues)
-
-</div>
