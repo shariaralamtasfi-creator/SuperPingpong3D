@@ -109,20 +109,6 @@ Real-time HUD display showing the current volley hit count—watch records break
 - **C** - Cycle through camera views
 
 
-### Quick Start
-
-```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js
-npx http-server
-```
-
-Then open `http://localhost:8000` in your browser
-
----
-
 ## 🛠️ Built With
 
 - **Three.js** - 3D graphics rendering
