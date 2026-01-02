@@ -109,15 +109,6 @@ Real-time HUD display showing the current volley hit count—watch records break
 - **C** - Cycle through camera views
 
 
-## 🛠️ Built With
-
-- **Three.js** - 3D graphics rendering
-- **JavaScript** - Game logic and physics
-- **HTML5 Canvas** - UI rendering
-- **CSS3** - Styling and animations
-
----
-
 ## 🎯 Roadmap
 
 - [ ] Online multiplayer support
