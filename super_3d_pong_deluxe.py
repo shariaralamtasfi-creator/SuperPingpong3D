@@ -33,7 +33,7 @@ DASH_COOLDOWN_TIME = 120
 
 # Movement speeds
 NORMAL_SPEED = 6
-DASH_SPEED = 14
+DASH_SPEED = 50
 
 # Colors (Red, Green, Blue)
 COLOR_PLAYER_1 = [0.0, 1.0, 1.0]      # Cyan
@@ -105,6 +105,7 @@ def create_player(player_number):
         "dash_cooldown": 0,
         "is_giant": False,
         "giant_time_left": 0,
+        "dash_time_left": 0,
     }
 
 
@@ -227,6 +228,7 @@ def try_player_dash(player):
     
     if player["dash_cooldown"] == 0:
         player["dash_cooldown"] = DASH_COOLDOWN_TIME
+        player["dash_time_left"] = 30
         return True
     
     return False
@@ -238,6 +240,10 @@ def update_player(player):
     # Count down dash cooldown
     if player["dash_cooldown"] > 0:
         player["dash_cooldown"] -= 1
+
+    # Count down dash active time
+    if player["dash_time_left"] > 0:
+        player["dash_time_left"] -= 1
     
     # Count down giant powerup
     if player["is_giant"]:
@@ -1087,7 +1093,10 @@ def on_key_press(key, x, y):
         
         # Camera toggle (C key)
         if key_char == "c":
-            game["camera_mode"] = (game["camera_mode"] + 1) % 3
+            if game["is_two_player"]:
+                game["camera_mode"] = (game["camera_mode"] + 1) % 2
+            else:
+                game["camera_mode"] = (game["camera_mode"] + 1) % 3
         
         # Quit (ESC key)
         if key == b'\x1b' and game["state"] == "PLAYING":
